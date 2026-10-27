@@ -23,14 +23,14 @@ Point it at a few exported bookmark files (or whole folders of them) and it prod
 ## Usage
 
 ```bash
-chmod +x merge_bookmarks.sh
-./merge_bookmarks.sh <output.html> <directory_or_file_1> [file_2 ...]
+chmod +x bookmark-recipy-ver1.sh
+./bookmark-recipy-ver1.sh <output.html> <directory_or_file_1> [file_2 ...]
 ```
 
 ### Example
 
 ```bash
-./merge_bookmarks.sh my_bookmarks.html ~/Downloads/bookmarks/ loose_file.html
+./bookmark-recipy-ver1.sh my_bookmarks.html ~/Downloads/bookmarks/ loose_file.html
 ```
 
 Sample output:
