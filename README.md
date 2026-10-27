@@ -36,15 +36,15 @@ chmod +x bookmark-recipy-ver1.sh
 Sample output:
 
 ```
-Processando 3 arquivo(s) encontrado(s)...
+Processing 3 file(s) found...
 
-  [Entrada] /home/user/Downloads/bookmarks/firefox.html: 412 favoritos únicos encontrados.
-  [Entrada] /home/user/Downloads/bookmarks/chrome.html: 530 favoritos únicos encontrados.
-  [Entrada] loose_file.html: 58 favoritos únicos encontrados.
+[Input] /home/user/Downloads/bookmarks/firefox.html: 412 unique bookmarks found.
+[Input] /home/user/Downloads/bookmarks/chrome.html: 530 unique bookmarks found.
+[Input] loose_file.html: 58 unique bookmarks found.
 
-  [Saída] Total consolidado de favoritos únicos no arquivo final: 871
+[Output] Consolidated total of unique bookmarks in the final file: 871
 
-Sucesso! Arquivo mesclado salvo em: my_bookmarks.html
+Success! Merged file saved to: my_bookmarks.html
 ```
 
 Then import `my_bookmarks.html` in your browser (Firefox: *Bookmarks → Manage Bookmarks → Import and Backup → Import Bookmarks from HTML*; Chrome/Edge: *Bookmarks → Import bookmarks and settings → Bookmarks HTML file*).
