@@ -9,8 +9,8 @@ Point it at a few exported bookmark files (or whole folders of them) and it prod
 - **Merges many files at once**: pass individual files, directories (searched recursively for `.html` / `.htm`), or a mix of both.
 - **Removes duplicates**: each URL appears only once in the final file; the first folder it was found in wins.
 - **Keeps your folder hierarchy**: nested folders are rebuilt as real nested folders, not flattened names like `Dev / Python`.
-- **Drops the browser's root toolbar folder**: "Bookmarks Toolbar" / "Bookmarks bar" (and Portuguese equivalents) no longer prefix every category. Detected through the `PERSONAL_TOOLBAR_FOLDER` attribute, with a name-based fallback.
-- **Collects loose bookmarks**: links that were not inside any folder go into an `Outros` folder.
+- **Drops the browser's root toolbar folder**: "Bookmarks Toolbar" / "Bookmarks bar" no longer prefix every category. Detected through the `PERSONAL_TOOLBAR_FOLDER` attribute, with a name-based fallback.
+- **Collects loose bookmarks**: links that were not inside any folder go into an `Others` folder.
 - **Shows counters**: unique bookmarks found in each input file, plus the consolidated total.
 - **Safe to re-run**: skips the output file if it is inside an input directory, and ignores repeated paths.
 - **Browser-compatible output**: standard Netscape bookmark format with proper HTML escaping.
@@ -54,13 +54,12 @@ Then import `my_bookmarks.html` in your browser (Firefox: *Bookmarks → Manage 
 Open the script and edit the constants at the top of the embedded Python block:
 
 - `ROOT_FOLDER_NAMES`: add the name of any top-level folder your browser uses that you do not want in the result (for example "Other Bookmarks").
-- `LOOSE_FOLDER_NAME`: the folder name used for bookmarks that were not inside any folder (default `Outros`).
+- `LOOSE_FOLDER_NAME`: the folder name used for bookmarks that were not inside any folder (default `Others`).
 
 ## Notes and limitations
 
 - Duplicates are detected by exact URL string, so `http://example.com` and `http://example.com/` count as different links.
 - Extra attributes such as `ADD_DATE` and icons are not preserved; only folder names, URLs and titles are kept.
-- Console messages are in Portuguese.
 
 ## License
 
